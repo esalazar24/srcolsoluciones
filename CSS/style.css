@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background: #E8F4F5;
+  font-size: 20px;
+}
+body a {
+  color: rgb(127, 209, 174);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+}
+
+header {
+  font-family: "Golos Text", sans-serif;
+  background: url("../img/slider/3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 20px;
+  border-bottom: 2px solid rgb(127, 209, 174);
+}
+header nav img {
+  width: 200px;
+  height: 240px;
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header nav p {
+  padding: 0;
+  margin: 0;
+}
+header section {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  padding: 50px 20px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+header section blockquote {
+  color: white;
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+header section form {
+  padding: 20px;
+  padding-top: 510px;
+  background: rgba(0, 0, 0, 0.4);
+}
+header section form input, header section form button, header section form textarea {
+  display: block;
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+header section form textarea {
+  padding: 10px;
+  width: calc(100% - 20px);
+}
+header section form button {
+  width: 100%;
+  height: 40px;
+  font-size: 1em;
+}
+
+main {
+  background: #ac1717;
+  margin: 5px;
+}
+main p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: #3AD22E;
+}
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  header nav {
+    grid-template-columns: 40px 1fr;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 10px;
+  }
+  header nav #logo1 {
+    display: none;
+  }
+  header nav img {
+    width: 80px;
+    height: 100px;
+  }
+  header section {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  header section blockquote {
+    display: none;
+  }
+  header section form {
+    padding: 10px;
+  }
+  header section form button {
+    height: 55px;
+  }
+  main p {
+    font-size: 0.8em;
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 600px) {
+  header nav {
+    padding: 0 10px;
+  }
+  header nav #logo2 {
+    display: none;
+  }
+  header nav ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  header nav ul li {
+    margin-right: 20px;
+  }
+  header section {
+    grid-template-columns: 1fr 300px;
+    padding: 20px 10px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+  header section blockquote {
+    font-size: 1em;
+  }
+  header section form {
+    padding: 10px;
+  }
+  main p {
+    font-size: 0.8em;
+  }
+  footer {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */
