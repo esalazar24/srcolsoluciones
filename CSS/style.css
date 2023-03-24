@@ -19,6 +19,9 @@ html {
 body {
   background: #E8F4F5;
   font-size: 20px;
+  position: relative;
+  padding-bottom: 2em;
+  min-height: 100vh;
 }
 body a {
   color: rgb(127, 209, 174);
@@ -94,11 +97,11 @@ header section form button {
 }
 
 main {
-  background: #ac1717;
-  margin: 5px;
+  background: #E8F4F5;
+  margin: 1%;
 }
 main p {
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
@@ -107,13 +110,13 @@ footer {
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  background: #3AD22E;
+  background: #8FBCEF;
+  width: 100%;
 }
 footer p {
   padding: 0;
   margin: 0;
 }
-
 @media screen and (max-width: 600px) {
   body {
     font-size: 12px;
